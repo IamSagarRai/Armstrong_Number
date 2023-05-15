@@ -1,14 +1,19 @@
-n = int(input("Enter a number: "))
-sum = 0
-order = len(str(n))
-dup_n = n
+while True:
+    num = int(input("Enter a number:"))
+    temp=num
+    a=num
+    r=0
+    c=0
+    while a>0:
+        c=c+1
+        a=a//10
+    
+    while(temp>0):
+        s=temp%10
+        r=r+s**c
+        temp//=10
 
-while(n > 0):
-    digit = n % 10
-    sum += digit ** order
-    n = n // 10
-
-if (sum == dup_n):
-    print(f"{dup_n} is an armstrong number!")
-else:
-    print(f"{dup_n} is not an armstrong number")
+    if(r==num):
+        print("It is an armstrong number")
+    else:
+        print("It is not an armstrong number")
