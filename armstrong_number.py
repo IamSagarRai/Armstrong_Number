@@ -11,4 +11,4 @@ while(n > 0):
 if (sum == dup_n):
     print(f"{dup_n} is an armstrong number!")
 else:
-    print(f"{dup_n} is not an armstrong number")
+    print(f"{dup_n} is not an Armstrong number"
